@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Entornos Virtuales
+venv/
+env/
+
+# Reportes de Pytest
+.pytest_cache/
+.cache/
+
+# Archivos de IDE
+.vscode/
+.idea/
