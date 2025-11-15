@@ -2,7 +2,7 @@ import requests
 import pytest
 
 def test_api_create_post():
-    # Cargamos datos
+    # Cargo datos
     url = "https://jsonplaceholder.typicode.com/posts"
     payload = {
         "title": "Mi Post de Prueba QA",
@@ -10,10 +10,10 @@ def test_api_create_post():
         "userId": 101
     }
     
-    # Hacemos el POST
+    # Hago el POST
     response = requests.post(url, json=payload)
     
-    # Validamos la respuesta
+    # Valido la respuesta
     print(f"\nStatus Code: {response.status_code}")
     assert response.status_code == 201
     
