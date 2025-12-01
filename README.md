@@ -15,8 +15,7 @@ Demostrar habilidades en la creación de un framework de pruebas escalable y man
 * **Page Object Model (POM):** Como patrón de diseño para la mantenibilidad.
 
 ## Pruebas incluidas
-
-* **UI (SauceDemo):** Pruebas de login (Camino bueno y camino malo) 
+ 
 * **API (JSONPlaceholder):** Pruebas de `GET` y `POST`. 
 * **UI (SauceDemo):**
     * Flujos de Login (Happy/Sad Path).
