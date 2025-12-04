@@ -1,7 +1,7 @@
-from pages.PaginaLogin import PaginaLogin
-from pages.PaginaCarrito import PaginaCarrito
-from pages.PaginaInventario import PaginaInventario
-from pages.PaginaChechout import PaginaCheckout
+from pages.saucedemo.PaginaLogin import PaginaLogin
+from pages.saucedemo.PaginaCarrito import PaginaCarrito
+from pages.saucedemo.PaginaInventario import PaginaInventario
+from pages.saucedemo.PaginaChechout import PaginaCheckout
 
 def test_flujo_compra_completo(driver):
     # 1. LOGIN

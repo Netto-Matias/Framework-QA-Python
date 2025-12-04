@@ -1,4 +1,4 @@
-from pages.PaginaLogin import PaginaLogin
+from pages.saucedemo.PaginaLogin import PaginaLogin
 
 def test_login_valido(driver):
     login_page = PaginaLogin(driver)
