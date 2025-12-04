@@ -15,10 +15,13 @@ Demostrar habilidades en la creación de un framework de pruebas escalable y man
 * **Page Object Model (POM):** Como patrón de diseño para la mantenibilidad.
 
 ## Pruebas incluidas
-
-* **UI (SauceDemo):** Pruebas de login (Camino bueno y camino malo) 
+ 
 * **API (JSONPlaceholder):** Pruebas de `GET` y `POST`. 
-
+* **UI (SauceDemo):**
+    * Flujos de Login (Happy/Sad Path).
+    * **[NUEVO]** Flujo E2E de Compra Completa: Login -> Selección de Productos -> Carrito -> Checkout -> Validación de Orden.
+    * Uso de Page Object Model en cada pantalla (Login, Inventario, Carrito, Checkout).
+      
 ## Cómo ejecutarlo
 
 1. Clonar el repositorio: `git clone ...`
