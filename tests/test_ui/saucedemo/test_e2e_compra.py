@@ -6,6 +6,7 @@ from pages.saucedemo.PaginaChechout import PaginaCheckout
 def test_flujo_compra_completo(driver):
     # 1. LOGIN
     login_page = PaginaLogin(driver)
+    login_page.navegar()
     login_page.iniciar_sesion("standard_user", "secret_sauce")
     
     # 2. Inventario

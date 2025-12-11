@@ -9,6 +9,9 @@ class PaginaLogin:
         self.locator_password = (By.ID, "password")
         self.locator_boton_login = (By.ID, "login-button")
         self.locator_error_message = (By.XPATH, "//*[@data-test='error']")
+    
+    def navegar(self):
+        self.driver.get("https://www.saucedemo.com/")
         
     def escribir_usuario(self, usuario):
         self.driver.find_element(*self.locator_usuario).send_keys(usuario)
