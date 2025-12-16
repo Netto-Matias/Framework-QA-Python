@@ -1,5 +1,3 @@
-<img width="1872" height="662" alt="image" src="https://github.com/user-attachments/assets/dda5042c-9800-46d0-bbd5-e80653dd0e8c" /># Framework de Automatización de QA (Selenium + Pytest + API)
-
 Este es mi proyecto de portafolio de automatización de QA, construido desde cero. 
 
 ## Proposito
