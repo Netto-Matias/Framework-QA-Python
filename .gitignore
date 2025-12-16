@@ -14,3 +14,9 @@ env/
 # Archivos de IDE
 .vscode/
 .idea/
+
+# Archivos de reporte
+*.html
+reporte_pruebas.html
+assets/
+
