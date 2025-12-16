@@ -5,7 +5,7 @@ from selenium import webdriver
 def driver():
     print("\n[SETUP] Creando instancia del driver...")
     d = webdriver.Chrome()
-    d.get("https://the-internet.herokuapp.com/dropdown")
+    d.maximize_window()
     
     yield d
     
