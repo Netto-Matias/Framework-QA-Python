@@ -1,4 +1,4 @@
-# Framework de Automatización de QA (Selenium + Pytest + API)
+<img width="1872" height="662" alt="image" src="https://github.com/user-attachments/assets/dda5042c-9800-46d0-bbd5-e80653dd0e8c" /># Framework de Automatización de QA (Selenium + Pytest + API)
 
 Este es mi proyecto de portafolio de automatización de QA, construido desde cero. 
 
@@ -27,3 +27,7 @@ Demostrar habilidades en la creación de un framework de pruebas escalable y man
 1. Clonar el repositorio: `git clone ...`
 2. Instalar dependencias: `pip install -r requirements.txt`
 3. Ejecutar todas las pruebas: `pytest`
+
+## Reporte de Ejecución
+
+<img width="1872" height="662" alt="Captura de pantalla 2025-12-15 231336" src="https://github.com/user-attachments/assets/e87597a8-137e-49a9-84c8-8197185bb7ed" />
