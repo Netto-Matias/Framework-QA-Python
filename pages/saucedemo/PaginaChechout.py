@@ -22,10 +22,13 @@ class PaginaCheckout:
         self.wait.until(EC.visibility_of_element_located(self.locator_input_nombre)).send_keys(nombre)
         self.driver.find_element(*self.locator_input_apellido).send_keys(apellido)
         self.driver.find_element(*self.locator_input_codigo_postal).send_keys(codigo_postal)
-        self.driver.find_element(*self.locator_botton_continue).click()
+        
+        boton_continue = self.wait.until(EC.presence_of_element_located(self.locator_botton_continue))
+        self.driver.execute_script("arguments[0].click();", boton_continue)
         
     def finalizar_compra(self):
-        self.wait.until(EC.element_to_be_clickable(self.locator_boton_terminar)).click()
+        boton_finish = self.wait.until(EC.presence_of_element_located(self.locator_boton_terminar))
+        self.driver.execute_script("arguments[0].click();", boton_finish)
     
     def obtener_mensaje_exito(self):
         return self.wait.until(EC.visibility_of_element_located(self.locator_mensaje_exito)).text
