@@ -1,0 +1,33 @@
+name: QA Automation Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs: 
+  test_suite:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Descargar el código
+    - name: Checkout del código
+      uses: actions/checkout@v3
+
+    # 2. Instalar Python
+    - name: Configurar Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    # 3. Instalar librerias
+    - name: Instalar dependencias
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    # 4. Ejecutar pruebas
+    - name: Ejecutar pruebas con Pytest
+      run: |
+        pytest
