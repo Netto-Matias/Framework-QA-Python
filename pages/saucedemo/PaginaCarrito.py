@@ -20,7 +20,7 @@ class PaginaCarrito:
         return nombres
     
     def hacer_checkout(self):
-        boton = self.wait.until(EC.element_to_be_clickable(self.locator_boton_checkout))
+        boton = self.wait.until(EC.presence_of_element_located(self.locator_boton_checkout))
         
         # Uso de JavaScript para hacer clic forzado
         self.driver.execute_script("arguments[0].click();", boton)
