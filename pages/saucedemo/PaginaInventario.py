@@ -26,7 +26,7 @@ class PaginaInventario:
             return 0
         
     def ir_al_carrito(self):
-        boton = self.wait.until(EC.element_to_be_clickable(self.locator_boton_carrito))
+        boton = self.wait.until(EC.element_to_be_clickable(self.locator_carrito))
         
         self.driver.execute_script("arguments[0].click();", boton)
         
